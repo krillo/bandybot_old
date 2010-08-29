@@ -2,7 +2,7 @@
 <?php
 require_once("/usr/local/boyhappy.se/bandybot/init.php");
 
-$to = User::getAllEmailAdresses(true);
+$to = User::getAllEmailAdresses();
 
 
 switch ($argv[1]) {

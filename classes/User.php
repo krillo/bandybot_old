@@ -93,14 +93,6 @@ class User {
    */ 
   public static function setUsers($status) {
     global $db;
-    /*
-      $sql = "select user_id from user";
-      $allUsers = $db->allValuesAsArray($sql);
-      foreach($allUsers as $user){
-      $sql = "update user set status = $status, date = now() where user_id = $user[id]";
-      $res = $db->query($sql);
-      }
-     */
     $sql = "update user set status = $status, date = now()";
     $res = $db->query($sql);
   }
