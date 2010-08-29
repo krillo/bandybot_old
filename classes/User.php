@@ -37,9 +37,10 @@ class User {
  public function getEmptyUser() {
     $row = array("id" => "new", "name" => 'förnamn', "lname" => 'efternamn', "email" => "email",
         "mobile" => "mobil", "phone" => "hemtelefon", "tagline" => "slogan", "betalt" => 0,
-        "date" => date(), "comment" => "kommentar", "status" => 0, "unixdate" => time());
+        "date" => date('Y-m-d H:i:s'), "comment" => "kommentar", "status" => 0, "unixdate" => time());
     return $row;
   }
+
 
 
   /**
