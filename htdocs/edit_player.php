@@ -74,10 +74,4 @@ if (isset($_POST["id"]) && $save == 'spara') {
   </form>
 
 
-<?php
-$emails = User::getAllEmailAdresses(false);
-echo $emails;
-
-?>
-
 <?php include 'footer.php'; ?>
