@@ -49,8 +49,8 @@ $maby = User::getStatusCount(User::MABY);
         <td><input type="radio" name="status" value="1" <?php echo ($row['status'] == '1') ? 'checked' : ''; ?> /></td>
         <td><input type="radio" name="status" value="2" <?php echo ($row['status'] == '2') ? 'checked' : ''; ?> /></td>
         <td><input type="radio" name="status" value="3" <?php echo ($row['status'] == '3') ? 'checked' : ''; ?> /></td>
-        <td><input type="text"  name="comment" value="<?php echo $row['comment'] ?>"  class="comment-box" /></td>
         <td><input type="submit"  value=" Ok " /></td>
+        <td><input type="text"  name="comment" value="<?php echo $row['comment'] ?>"  class="comment-box" /></td>
         <td><?php echo date('j/n H:i', $row['unixdate']); ?></td>
       <input type="hidden" name="id" value="<?php echo $row['id'] ?>" />
       </tr>
@@ -64,8 +64,9 @@ $maby = User::getStatusCount(User::MABY);
       <td><input type="radio" name="status" value="1" disabled /></td>
       <td><input type="radio" name="status" value="2" disabled /></td>
       <td><input type="radio" name="status" value="3" disabled /></td>
-      <td><input type="text"  name="comment" value=""  class="comment-box" disabled /></td>
       <td><input type="submit"  value=" Ok " disabled /></td>
+      <td><input type="text"  name="comment" value=""  class="comment-box" disabled /></td>
+     
       <td></td>
     </tr>
   </form>
