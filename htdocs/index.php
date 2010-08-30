@@ -32,8 +32,8 @@ $maby = User::getStatusCount(User::MABY);
     <th>Nej</th>
     <th>?</th>
     <th>Ja</th>
+     <th></th>
     <th>Kommentar</th>
-    <th></th>
     <th>Datum</th>
   </tr>
 
