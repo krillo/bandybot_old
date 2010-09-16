@@ -15,8 +15,6 @@ define('DB_NAME', 'bandybot');
 define('DOC_ROOT', '/Users/putti/proj/bbot');
 
 
-//file
-//define('DOC_ROOT', '/usr/local/boyhappy.se/bandybot');
 
 //spot
 define('SPOT_URL', 'http://www.nordpoolspot.com/reports/areaprice/?i=1&p=0&u=2&g=0&a=9');
