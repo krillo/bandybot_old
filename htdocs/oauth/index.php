@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+<?php include '../header.php'; ?>
 
 Tjoho index.php <br /> 
 
@@ -8,4 +8,4 @@ foreach ($_GET as $key => $value) {
 }
 ?>
 
-<?php include 'footer.php'; ?>
+<?php include '../footer.php'; ?>
