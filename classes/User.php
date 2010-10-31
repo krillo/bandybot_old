@@ -103,9 +103,11 @@ class User {
    */
   public static function resetUsers() {
     global $db;
-    $sql = "update user set status = ". NOT_REG .", date = now(), comment = '";
+    $sql = "update user set status = ".  User::NOT_REG .", date = now(), comment = '' ";
+    echo $sql . "\n";
     $res = $db->query($sql);
   }
+
 
   /**
    * Sets a user to submitted status
