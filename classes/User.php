@@ -108,6 +108,7 @@ class User {
     $res = $db->query($sql);
   }
 
+
   /**
    * Sets a user to submitted status
    *
