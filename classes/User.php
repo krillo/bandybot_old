@@ -96,7 +96,17 @@ class User {
     $sql = "update user set status = $status, date = now()";
     $res = $db->query($sql);
   }
-  
+
+  /**
+   * Sets all users to NOT_REG and their comments to blank
+   *
+   */
+  public static function resetUsers() {
+    global $db;
+    $sql = "update user set status = ".  User::NOT_REG .", date = now(), comment = '' ";
+    echo $sql . "\n";
+    $res = $db->query($sql);
+  }
 
   /**
    * Sets a user to submitted status
