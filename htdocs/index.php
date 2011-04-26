@@ -35,6 +35,7 @@ $maby = User::getStatusCount(User::MABY);
     <th ></th>
     <th >Kommentar</th>
     <th >Datum</th>
+    <th >Betalt</th>
   </tr>
 
   <?php
@@ -55,6 +56,7 @@ $maby = User::getStatusCount(User::MABY);
         <td class="list"><input type="submit"  value=" Ok " /></td>
         <td class="list"><input type="text"  name="comment" value="<?php echo $row['comment'] ?>"  class="comment-box" /></td>
         <td class="list"><?php echo $date; ?></td>      
+        <td class="list"><?php echo ($row['betalt'] == '1') ? 'Ja' : ''; ?></td>
       </tr>
       <input type="hidden" name="id" value="<?php echo $row['id'] ?>" />
     </form>
@@ -69,6 +71,7 @@ $maby = User::getStatusCount(User::MABY);
       <td ><input type="radio" name="status" value="3" disabled /></td>
       <td ><input type="submit"  value=" Ok " disabled /></td>
       <td ><input type="text"  name="comment" value=""  class="comment-box" disabled /></td>
+      <td > </td>    
       <td > </td>
     </tr>
   </form>
