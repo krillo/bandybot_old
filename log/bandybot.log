@@ -1,0 +1,2 @@
+2011-04-26 22:00:02 start resetUsers()update user set status = 0, date = now(), comment = '' 
+2011-04-26 22:00:03 stop resetUsers()
