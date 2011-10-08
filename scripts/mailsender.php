@@ -7,16 +7,16 @@ $to = User::getAllEmailAdresses();
 
 switch ($argv[1]) {
   case 1:
-    $subject = 'Innebandy vecka ' . date('W');
+    $subject = 'Innebandy vecka ' . date('W') . ", Betala 250:-";
     break;
   case 2:
-    $subject = 'Innebandypåminnelse vecka ' . date('W');
+    $subject = 'Innebandypåminnelse vecka ' . date('W') . ", Betala 250:-";
     break;
   case 3:
-    $subject = 'Innebandystatus kl 19, vecka ' . date('W');
+    $subject = 'Innebandystatus kl 19, vecka ' . date('W') . ", Betala 250:-";
     break;
   default:
-    $subject = 'Innebandy vecka ' . date('W');
+    $subject = 'Innebandy vecka ' . date('W') . ", Betala 250:-";
     break;
 }
 
@@ -67,6 +67,7 @@ foreach ($resArray as $user) {
 
 if ($argv[1] < 3) {
   $message .= " \n \n";
+  $message .= "Nu är det dax att betala 250 kr per man \n";
   $message .= "Regga er på: \n";
   $message .= "http://bandybot.boyhappy.se \n";
   $message .= " \n";
