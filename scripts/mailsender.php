@@ -76,8 +76,8 @@ if ($argv[1] < 3) {
   $message .= " \n";
   $message .= "Plats och datumen för denna omgång: \n";
   $message .= "Tis 20-21,  Elinebergskolan \n";
-  $message .= "2010-08-31  -  2010-12-21     2210:- \n";
-  $message .= "2011-01-11  -  2011-05-24     2600:- \n";
+  $message .= "2011-08-23  -  2011-12-20     2520:- \n";
+  $message .= "2012-01-10  -  2012-05-29     2940:- \n";
   $message .= " \n";
   $message .= " \n";
   $message .= "/Putti \n";
